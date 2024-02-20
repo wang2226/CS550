@@ -1,0 +1,6 @@
+0 round search and transfer time:
+10K small files (1KB) for peer2 :885176.0
+1K medium files (1MB) for peer2 :88290.0
+8 large files (1GB) for peer2 :8915.0
+
+

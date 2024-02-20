@@ -1,0 +1,37 @@
+wallet:
+  public_key: 8zFTaChUGCmK5VGcwaNKk8Ymguk3TDYHE5UrjZqDzsd4
+blockchain:
+- server: 127.0.0.1
+- port: 10002
+- threads: 2
+metronome:
+- server: 127.0.0.1
+- port: 10003
+- threads: 2
+pool:
+- server: 127.0.0.1
+- port: 10001
+- threads: 2
+validator:
+- fingerprint: 4bfbb9b0-34c0-4986-a515-9f43ba52b56f
+- public_key: 8zFTaChUGCmK5VGcwaNKk8Ymguk3TDYHE5UrjZqDzsd4
+- proof_pow:
+  - enable: 'True'
+  - threads_hash: 2
+- proof_pom:
+  - enable: 'False'
+  - threads_hash: 2
+  - memory: 1G
+- proof_pos:
+  - enable: 'False'
+  - threads_hash: 2
+  - disk: 10G
+  - buckets: 256
+  - cup_size: 32768
+  - cups_per_bucket: 40
+  - threads_io: 1
+  - vault: ./dsc-pos.vault
+monitor:
+- server: 127.0.0.1
+- port: 10004
+- threads: 2
